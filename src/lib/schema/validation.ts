@@ -17,3 +17,7 @@ export const jobSchema = z.object({
   created_at: z.string(),
   updated_at: z.string(),
 });
+
+export const approveJobSchema = z.object({
+  approved: z.literal(true),
+});
